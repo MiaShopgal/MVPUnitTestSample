@@ -1,9 +1,9 @@
 package evan.chen.tutorial.tdd.mvpunittestsample
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.app.AlertDialog
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import evan.chen.tutorial.tdd.mvpunittestsample.api.ProductAPI
 import evan.chen.tutorial.tdd.mvpunittestsample.api.ProductResponse
 import kotlinx.android.synthetic.main.activity_main.*
@@ -39,7 +39,7 @@ class ProductActivity : AppCompatActivity(), ProductContract.IProductView {
     }
 
     override fun onBuySuccess() {
-        Toast.makeText(this, "購買成功", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "購買成功", Toast.LENGTH_LONG).show()
     }
 
     override fun onBuyFail() {

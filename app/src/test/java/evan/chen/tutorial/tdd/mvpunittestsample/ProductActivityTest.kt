@@ -18,7 +18,7 @@ class ProductActivityTest {
     @Before
     fun setupActivity() {
 
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
 
         val activityController = Robolectric.buildActivity(ProductActivity::class.java)
         activity = activityController.get()

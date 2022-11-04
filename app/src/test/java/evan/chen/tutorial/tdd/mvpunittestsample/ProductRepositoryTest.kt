@@ -21,7 +21,7 @@ class ProductRepositoryTest {
 
     @Before
     fun setupPresenter() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
 
         repository = ProductRepository(productAPI)
 

@@ -1,11 +1,9 @@
 package evan.chen.tutorial.tdd.mvpunittestsample
 
 import evan.chen.tutorial.tdd.mvpunittestsample.api.ProductResponse
-import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
-import org.mockito.Mockito
 import org.mockito.Mockito.verify
 import org.mockito.MockitoAnnotations
 
@@ -23,7 +21,7 @@ class ProductPresenterTest {
 
     @Before
     fun setupPresenter() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
 
         presenter = ProductPresenter(productView, repository)
 
